@@ -79,18 +79,26 @@
     article.innerHTML = `
       <header class="hero">
         <span class="eyebrow">A FIELD GUIDE TO AGENT SKILLS</span>
-        <h1>把工程經驗，寫成 AI 能遵循的工作方法。</h1>
-        <p class="dek">這不是指令大全，而是一套學習如何設計 Agent Skill 的台灣中文讀本。從提問、規格、實作、測試到除錯，逐篇拆解 Matt Pocock 如何把軟體工程紀律寫進 <code>SKILL.md</code>。</p>
-        <div class="meta-row"><span class="tag">22 篇主題文章</span><span class="tag">台灣繁體中文</span><span class="tag">MIT License</span><span class="tag">可離線閱讀</span></div>
+        <h1>先學會使用，再學會設計。</h1>
+        <p class="dek">這是一套兩階段的台灣中文學習手冊：第一篇帶你把 Skills 用成順暢的工程工作流；第二篇反向拆解它們的寫作設計，理解每條指令背後的思考。</p>
+        <div class="meta-row"><span class="tag">2 篇長篇主文</span><span class="tag">22 篇技能索引</span><span class="tag">台灣繁體中文</span><span class="tag">可離線閱讀</span></div>
       </header>
+      <section>
+        <span class="eyebrow">START HERE</span>
+        <h2>兩個篇章，兩種閱讀目的</h2>
+        <div class="article-grid">
+          <a class="article-card" href="#chapter-1-use-skills"><span class="card-num">CHAPTER 01 / 實戰</span><h3>怎麼使用這些 Skills</h3><p>從需求不清、原型、規格、拆票、TDD、除錯到 review，建立每一步該怎麼判斷的工程節奏。</p></a>
+          <a class="article-card" href="#chapter-2-writing-skills"><span class="card-num">CHAPTER 02 / 進階</span><h3>Skill 為何這樣寫</h3><p>從觸發條件、context load、資訊階層、完成條件與失敗模式，學會設計可預測的 Agent 行為。</p></a>
+        </div>
+      </section>
       <section>
         <span class="eyebrow">HOW TO READ</span>
         <h2>建議學習路線</h2>
         <ol class="flow">
-          <li><span><strong>先讀路由。</strong>從「Ask Matt」理解整套 skills 如何形成工作流，而不是把每個 skill 當成孤島。</span></li>
-          <li><span><strong>再讀對齊。</strong>閱讀「拷問式訪談」與「領域建模」，理解為什麼寫程式前先建立共同語言。</span></li>
-          <li><span><strong>走完交付鏈。</strong>依序看規格、任務拆分、實作、TDD 與雙軸 code review。</span></li>
-          <li><span><strong>最後研究寫法。</strong>用「寫出優秀 Skills」回頭分析各篇的觸發條件、自由度與漸進式揭露。</span></li>
+          <li><span><strong>先讀篇章一。</strong>先掌握工作順序與切換 Skill 的時機，避免把它們當作零散指令。</span></li>
+          <li><span><strong>再挑一條實戰線。</strong>想做功能就讀規格、拆票、實作與 TDD；遇到 Bug 就讀診斷；專案太大就讀 Wayfinder。</span></li>
+          <li><span><strong>接著讀篇章二。</strong>帶著實際使用經驗，回頭理解 trigger、reference、guardrail 與 completion criterion 的必要性。</span></li>
+          <li><span><strong>最後仿寫。</strong>用「寫出優秀 Skills」與 glossary，為自己常重複的工作建立一個可 forward-test 的 Skill 草稿。</span></li>
         </ol>
       </section>
       <div class="callout"><strong>翻譯原則：</strong>技術識別字、檔名、CLI 命令、label 與程式碼保持英文；解說、流程與設計意圖翻成台灣慣用繁體中文。這樣既好讀，也不會因翻譯破壞可執行內容。</div>
