@@ -41,7 +41,7 @@ window.SKILLS = [
       "1. 現在的最大不確定性是什麼？\n2. 這是 fact 還是 decision？\n3. 是否需要把問題做得更具體才能回答？\n4. 這個工作能否在一個 session 內驗證？\n5. 下一步的完成條件是什麼？\n6. 如果這一步失敗，我靠哪一條 feedback loop 知道？\n7. 做完後，要如何確認品質與規格都沒有漏？",
       "## 與 22 個原始 Skills 的對照",
       "這篇是使用地圖。想知道某一步的精確行為，請回到側欄對應的原始導讀：`ask-matt` 看全圖；`grilling` 看訪談節奏；`to-spec`、`to-tickets`、`implement` 看交付鏈；`tdd`、`diagnosing-bugs`、`code-review` 看品質閉環；`wayfinder` 看大型探索。"
-    ].join("\\n\\n"),
+    ].join("\n\n"),
     files: [["ask-matt/SKILL.md", "整套流程的路由圖"], ["grilling/SKILL.md", "一次一題的決策協定"], ["tdd/SKILL.md", "實作迴圈"], ["diagnosing-bugs/SKILL.md", "除錯迴圈"]]
   },
   {
@@ -87,7 +87,7 @@ window.SKILLS = [
       "一份初稿的好壞，不在於長度，而在於 forward-test：讓 agent 用它完成一個真實任務，觀察它在哪個岔路漏讀、太早收工、誤觸發或重複做事。Skill 的成熟不是一次寫完，而是從這些失敗中反覆剪裁。",
       "## 結語：把經驗變成可交接的判斷力",
       "最好的 Skill 不會取代工程判斷；它把資深工程師平常隱性做的判斷順序、證據標準與停止條件，變成任何 agent 都能重複遵循的外部化知識。當你能看見這些設計選擇，你就不只是在翻譯指令，而是在學如何設計一套可靠的工作系統。"
-    ].join("\\n\\n"),
+    ].join("\n\n"),
     files: [["writing-great-skills/SKILL.md", "Predictability、Invocation 與資訊階層"], ["writing-great-skills/GLOSSARY.md", "完整的 Skill 設計詞彙"], ["ask-matt/SKILL.md", "Router Skill 的實例"]]
   },
   {
