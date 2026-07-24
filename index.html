@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Matt Pocock Skills 的台灣繁體中文學習手冊：逐篇理解工程工作流、設計原則與 SKILL.md 寫法。">
+  <title>Matt Pocock Skills｜台灣中文學習手冊</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#article">跳到文章內容</a>
+  <div class="reading-progress" id="readingProgress"></div>
+  <header class="mobile-header">
+    <button class="icon-button" id="menuButton" aria-label="開啟文章目錄" aria-expanded="false">☰</button>
+    <a class="mobile-brand" href="#home">Matt Pocock Skills</a>
+    <button class="icon-button" id="themeButtonMobile" aria-label="切換深色模式">◐</button>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <a href="#home">
+        <span class="brand-kicker">FIELD NOTES / 01</span>
+        <strong>Matt Pocock<br>Skills 手冊</strong>
+      </a>
+      <p>給想讀懂、拆解並寫出好 Skill 的工程師。</p>
+    </div>
+
+    <label class="search">
+      <span class="search-label">搜尋文章</span>
+      <input id="searchInput" type="search" placeholder="例如：TDD、規格、除錯…" autocomplete="off">
+      <kbd>/</kbd>
+    </label>
+
+    <nav id="sidebarNav" aria-label="文章目錄"></nav>
+
+    <div class="sidebar-footer">
+      <button class="plain-button" id="themeButton">◐&nbsp; 切換閱讀模式</button>
+      <p>台灣繁體中文學習版<br><span id="articleCount"></span></p>
+    </div>
+  </aside>
+
+  <button class="backdrop" id="backdrop" aria-label="關閉文章目錄"></button>
+
+  <main class="main">
+    <article class="article" id="article" tabindex="-1"></article>
+    <footer class="site-footer">
+      <p>原作 © Matt Pocock，依 MIT License 整理。程式碼、命令、檔名與技術識別字保留原文。</p>
+      <a href="https://github.com/mattpocock/skills">原始 GitHub Repository ↗</a>
+    </footer>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
